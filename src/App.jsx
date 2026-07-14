@@ -5,6 +5,7 @@ import heroImg from './assets/hero.png'
 import './App.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import AddEv from './components/AddEv'
+import ViewEv from './components/ViewEv'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -14,7 +15,7 @@ function App() {
          <BrowserRouter>
     <Routes>
   <Route path="/" element={<AddEv />} />
-  {/* <Route path="view" element={<ViewVol />} /> */}
+  <Route path="view" element={<ViewEv />} />
 </Routes>
      </BrowserRouter>
     </>

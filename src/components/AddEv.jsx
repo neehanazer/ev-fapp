@@ -27,7 +27,7 @@ const AddEv = () => {
     e.preventDefault();
 
     axios
-      .post("http://localhost:3000/add-booking", data)
+      .post("http://localhost:3000/add-ev", data)
       .then((res) => {
         alert("Booking Added Successfully");
 
